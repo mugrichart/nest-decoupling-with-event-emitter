@@ -23,7 +23,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) project illustrating how to decouple Nestjs projects using event-emitter.
 
 ## Project setup
 
