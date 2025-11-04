@@ -1,12 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Post } from '@nestjs/common';
+import { VideoService } from './video.service';
 
-@Controller()
+@Controller('/video')
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly videoService: VideoService) {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @Post()
+  createVideo() {
+    return this.videoService.publish();
   }
 }
